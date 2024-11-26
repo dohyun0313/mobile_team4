@@ -335,11 +335,11 @@
     <!-- 네비게이션 바 -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:orientation="horizontal"
         android:gravity="center"
         android:paddingTop="10dp"
-        android:paddingBottom="5dp"
+        android:paddingBottom="10dp"
         android:background="#0023A7"> <!-- 배경색 설정 -->
 
         <ImageButton
