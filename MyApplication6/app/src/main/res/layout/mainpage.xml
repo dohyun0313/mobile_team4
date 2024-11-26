@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg_color"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="465dp"
+        android:layout_height="305dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_logo" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#0023A7"/>
+
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="99dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/rounded_blue_button"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:padding="16dp"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/rounded_button"
+            android:text="냉장고"
+            android:drawableTop="@drawable/ic_re"
+            android:drawablePadding="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="16dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:text="레시피"
+            android:drawableTop="@drawable/ic_book"
+            android:drawablePadding="10dp"
+            android:padding="20dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:text="유통기한"
+            android:drawableTop="@drawable/ic_day"
+            android:drawablePadding="10dp"
+            android:padding="20dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:text="설정"
+            android:drawableTop="@drawable/ic_setting"
+            android:drawablePadding="10dp"
+            android:padding="20dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF" />
+
+    </GridLayout>
+
+</LinearLayout>
