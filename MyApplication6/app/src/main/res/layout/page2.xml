@@ -4,275 +4,388 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg_color"
-    android:padding="16dp">
-
-    <!-- 상단 바 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:paddingBottom="8dp">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="내 냉장고"
-            android:textSize="18sp"
-            android:textColor="#0023A7"
-            android:textStyle="bold"/>
-
-        <Spinner
-            android:id="@+id/spinnerMode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/spinner_background"
-            android:padding="8dp"
-            android:spinnerMode="dropdown" />
-    </LinearLayout>
-
-    <!-- 채소 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:paddingBottom="8dp">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="채소"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="#82AAEA"
-            android:padding="8dp"/>
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/ic_plus2"
-            android:background="@android:color/transparent"
-            android:scaleType="centerInside"/>
-    </LinearLayout>
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="4"
-        android:padding="8dp">
-
-        <!-- 카드뷰 1 -->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardVeg1"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="4dp"
-            android:background="@drawable/border"
-            card_view:cardCornerRadius="8dp"
-            card_view:cardElevation="4dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?attr/selectableItemBackground">
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/ic_carrot"
-                android:layout_gravity="center" />
-        </androidx.cardview.widget.CardView>
-
-        <!-- 카드뷰 2 -->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardVeg2"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="4dp"
-            card_view:cardCornerRadius="8dp"
-            card_view:cardElevation="4dp"
-            card_view:cardBackgroundColor="#FFFFFF"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?attr/selectableItemBackground">
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/ic_carrot"
-                android:layout_gravity="center" />
-        </androidx.cardview.widget.CardView>
-    </GridLayout>
-
-    <!-- 육류 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:paddingBottom="8dp">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="육류"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="#82AAEA"
-            android:padding="8dp"/>
-
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/ic_plus2"
-            android:background="@android:color/transparent"
-            android:scaleType="centerInside"/>
-    </LinearLayout>
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="4"
-        android:padding="8dp">
-
-        <!-- 카드뷰 1 -->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardMeat1"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="4dp"
-            card_view:cardCornerRadius="8dp"
-            card_view:cardElevation="4dp"
-            card_view:cardBackgroundColor="#FFFFFF"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?attr/selectableItemBackground">
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/ic_meat"
-                android:layout_gravity="center" />
-        </androidx.cardview.widget.CardView>
-
-        <!-- 카드뷰 2 -->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardMeat2"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="4dp"
-            card_view:cardCornerRadius="8dp"
-            card_view:cardElevation="4dp"
-            card_view:cardBackgroundColor="#FFFFFF"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?attr/selectableItemBackground">
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/ic_meat"
-                android:layout_gravity="center" />
-        </androidx.cardview.widget.CardView>
-    </GridLayout>
+    android:background="@drawable/bg_color">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:paddingBottom="8dp">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <TextView
-            android:layout_width="0dp"
+        <!-- 상단 바 -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="유제품"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="#82AAEA"
-            android:padding="8dp"/>
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp"
+            android:padding="16dp">
 
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/ic_plus2"
-            android:background="@android:color/transparent"
-            android:scaleType="centerInside"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_re_color"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="내 냉장고"
+                android:textSize="25sp"
+                android:textColor="#0023A7"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spinnerMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_background"
+                android:padding="8dp"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#0023A7"/>
+
+        <!-- 채소 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="채소"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#82AAEA"
+                android:padding="8dp"/>
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_plus2"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"/>
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:padding="16dp">
+
+            <!-- 카드뷰 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardVeg1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                card_view:cardCornerRadius="15dp"
+                card_view:cardElevation="4dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"> <!-- 테두리 적용 -->
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_carrot"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- 카드뷰 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardVeg2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                card_view:cardCornerRadius="15dp"
+                card_view:cardElevation="4dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"> <!-- 테두리 적용 -->
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_carrot"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#0023A7"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <!-- 육류 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="육류"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#82AAEA"
+                android:padding="8dp"/>
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_plus2"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"/>
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:padding="16dp">
+
+            <!-- 카드뷰 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardMeat1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                card_view:cardCornerRadius="15dp"
+                card_view:cardElevation="4dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"> <!-- 테두리 적용 -->
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_meat"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 카드뷰 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardMeat2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                card_view:cardCornerRadius="15dp"
+                card_view:cardElevation="4dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"> <!-- 테두리 적용 -->
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_meat"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#0023A7"
+            android:paddingTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="유제품"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#82AAEA" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_plus2"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"/>
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:padding="16dp">
+
+            <!-- 카드뷰 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardMilk1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                card_view:cardCornerRadius="15dp"
+                card_view:cardElevation="4dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"> <!-- 테두리 적용 -->
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_vigan"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 카드뷰 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardMilk2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                card_view:cardCornerRadius="15dp"
+                card_view:cardElevation="4dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"> <!-- 테두리 적용 -->
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_vigan"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#0023A7"
+            android:paddingTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
     </LinearLayout>
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="4"
-        android:padding="8dp">
-
-        <!-- 카드뷰 1 -->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardMeat4"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="4dp"
-            card_view:cardCornerRadius="8dp"
-            card_view:cardElevation="4dp"
-            card_view:cardBackgroundColor="#FFFFFF"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?attr/selectableItemBackground">
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/ic_meat"
-                android:layout_gravity="center" />
-        </androidx.cardview.widget.CardView>
-
-        <!-- 카드뷰 2 -->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardMeat3"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="4dp"
-            card_view:cardCornerRadius="8dp"
-            card_view:cardElevation="4dp"
-            card_view:cardBackgroundColor="#FFFFFF"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?attr/selectableItemBackground">
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/ic_meat"
-                android:layout_gravity="center" />
-        </androidx.cardview.widget.CardView>
-    </GridLayout>
 
     <!-- 하단 네비게이션 바 -->
+
+
+    <!-- 네비게이션 바 -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:orientation="horizontal"
         android:gravity="center"
-        android:paddingTop="8dp">
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:background="#0023A7"> <!-- 배경색 설정 -->
 
-        <Button
+        <ImageButton
             android:id="@+id/btnNav1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="아이콘1"/>
-        <Button
+            android:src="@drawable/ic_day_nocolor"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside" />
+
+        <ImageButton
             android:id="@+id/btnNav2"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="아이콘2"/>
+            android:src="@drawable/ic_book_nocolor"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:id="@+id/btnNav3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_refrigerator"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:id="@+id/btnNav4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_re_nocolor"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:id="@+id/btnNav5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_setting_nocolor"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside" />
     </LinearLayout>
 </LinearLayout>
+
