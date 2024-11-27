@@ -1,2 +1,4 @@
-package com.example.myapplication;public class addition {
+package com.example.myapplication;
+
+public class addition {
 }

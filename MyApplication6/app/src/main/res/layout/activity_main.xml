@@ -1,165 +1,196 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/bg_color"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
 
-    <!-- 상단 바 -->
-    <LinearLayout
+    <ImageView
+        android:layout_width="465dp"
+        android:layout_height="305dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_logo" />
+
+    <View
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:paddingBottom="8dp">
+        android:layout_height="4dp"
+        android:background="#0023A7"/>
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="내 냉장고"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
-
-        <Spinner
-            android:id="@+id/spinnerMode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:drawable/btn_dropdown"/>
-    </LinearLayout>
-
-    <!-- 채소 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:paddingBottom="8dp">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="채소"
-            android:textSize="16sp"
-            android:padding="8dp"/>
-
-        <Button
-            android:id="@+id/btnAddVeg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+"
-            android:layout_gravity="end"/>
-    </LinearLayout>
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="99dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/rounded_blue_button"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:columnCount="4"
-        android:padding="8dp">
+        android:padding="16dp">
 
-        <Button
-            android:id="@+id/btnVeg1"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="@drawable/ic_carrot"
-            android:layout_margin="4dp"/>
-        <Button
-            android:id="@+id/btnVeg2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="@drawable/ic_carrot"
-            android:layout_margin="4dp"/>
-        <!-- 추가 버튼 -->
+        <!-- 카드뷰 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menu1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="4dp"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="4dp"
+            android:layout_marginLeft="13dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_blue_button"> <!-- 테두리 적용 -->
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-15dp"
+                    android:src="@drawable/ic_re_nocolor" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textSize="18dp"
+                    android:textColor="#FFFF"
+                    android:text="냉장고"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!-- 카드뷰 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menu2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="4dp"
+            android:layout_marginLeft="25dp"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_blue_button"> <!-- 테두리 적용 -->
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="-15dp"
+                    android:src="@drawable/ic_book_nocolor"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textSize="18dp"
+                    android:textColor="#FFFF"
+                    android:text="레시피"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
     </GridLayout>
-
-    <!-- 육류 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:paddingBottom="8dp">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="육류"
-            android:textSize="16sp"
-            android:padding="8dp"/>
-
-        <Button
-            android:id="@+id/btnAddMeat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+"
-            android:layout_gravity="end"/>
-    </LinearLayout>
-
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:columnCount="4"
-        android:padding="8dp">
+        android:padding="16dp">
 
-        <Button
-            android:id="@+id/btnMeat1"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="@drawable/ic_meat"
-            android:layout_margin="4dp"/>
-        <Button
-            android:id="@+id/btnMeat2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="@drawable/ic_meat"
-            android:layout_margin="4dp"/>
-        <!-- 추가 버튼 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menu3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="4dp"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="4dp"
+            android:layout_marginLeft="13dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_blue_button"> <!-- 테두리 적용 -->
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="-15dp"
+                    android:src="@drawable/ic_day_nocolor" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textSize="18dp"
+                    android:textColor="#FFFF"
+                    android:text="유통기한"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menu4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="4dp"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="4dp"
+            android:layout_marginLeft="25dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_blue_button"> <!-- 테두리 적용 -->
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-15dp"
+                    android:src="@drawable/ic_setting_nocolor" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textSize="18dp"
+                    android:textColor="#FFFF"
+                    android:text="설정"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
     </GridLayout>
 
-    <!-- 유제품 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:paddingBottom="8dp">
 
-    <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="유제품"
-            android:textSize="16sp"
-            android:padding="8dp"/>
 
-        <Button
-            android:id="@+id/btnAddDairy"
-        android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+"
-            android:layout_gravity="end"/>
-    </LinearLayout>
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="4"
-        android:padding="8dp">
-
-        <Button
-            android:id="@+id/btnDairy1"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="@drawable/ic_meat"
-            android:layout_margin="4dp"/>
-        <Button
-            android:id="@+id/btnDairy2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="@drawable/ic_meat"
-            android:layout_margin="4dp"/>
-        <!-- 추가 버튼 -->
-    </GridLayout>
-    </LinearLayout>
+</LinearLayout>
