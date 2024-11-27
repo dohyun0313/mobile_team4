@@ -23,6 +23,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".page2"/>
+        <activity android:name=".addition"/>
+        <activity android:name=".daylimit"/>
+        <activity android:name=".search"/>
+        <activity android:name=".searchreasult"/>
     </application>
 
 </manifest>
