@@ -35,7 +35,7 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:columnCount="4"
         android:padding="16dp">
 
@@ -47,7 +47,6 @@
             android:layout_margin="4dp"
             card_view:cardCornerRadius="15dp"
             card_view:cardElevation="4dp"
-            android:layout_marginLeft="13dp"
             android:clickable="true"
             android:focusable="true">
 
@@ -82,7 +81,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_margin="4dp"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="30dp"
             card_view:cardCornerRadius="15dp"
             card_view:cardElevation="4dp"
             android:clickable="true"
@@ -117,7 +116,7 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+
         android:columnCount="4"
         android:padding="16dp">
 
@@ -129,7 +128,7 @@
             android:layout_margin="4dp"
             card_view:cardCornerRadius="15dp"
             card_view:cardElevation="4dp"
-            android:layout_marginLeft="13dp"
+
             android:clickable="true"
             android:focusable="true">
 
@@ -163,7 +162,7 @@
             android:layout_margin="4dp"
             card_view:cardCornerRadius="15dp"
             card_view:cardElevation="4dp"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="30dp"
             android:clickable="true"
             android:focusable="true">
 

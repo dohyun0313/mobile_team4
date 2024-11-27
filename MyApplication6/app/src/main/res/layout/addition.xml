@@ -23,11 +23,17 @@
             android:padding="16dp">
 
 
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_vigan" />
+
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="식재료 추가"
+                android:text="  식재료 추가"
                 android:textSize="25sp"
                 android:textColor="#0023A7"
                 android:textStyle="bold"/>
@@ -42,11 +48,21 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="입력칸에 형식에 맞게 입력해주세요."
+            android:text="입력칸에 입력해주세요."
             android:textSize="20sp"
             android:textColor="#0023A7"
             android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.식자재 이름"
+            android:textSize="17sp"
+            android:textColor="#0023A7"
+            android:textStyle="bold"
             android:layout_marginBottom="15dp" />
+
 
 
         <EditText
@@ -56,9 +72,17 @@
             android:hint="식자재 이름"
             android:padding="12dp"
             android:textSize="16sp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="25dp"
             android:background="@drawable/border"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2.유통기한"
+            android:textSize="17sp"
+            android:textColor="#0023A7"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp" />
 
         <EditText
             android:id="@+id/day"
@@ -67,8 +91,17 @@
             android:hint="유통기한"
             android:padding="12dp"
             android:textSize="16sp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="25dp"
             android:background="@drawable/border"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3.MEMO"
+            android:textSize="17sp"
+            android:textColor="#0023A7"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp" />
 
         <EditText
             android:id="@+id/memo"
