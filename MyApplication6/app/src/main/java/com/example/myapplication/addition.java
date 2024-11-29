@@ -69,9 +69,14 @@ public class addition extends AppCompatActivity {
         // 카테고리별 기본 이미지 리소스 선택
         int imageResource = getDefaultImageResourceForCategory(category);
 
+        if (imageResource == 0) {
+            Toast.makeText(this, "유효한 이미지 리소스를 찾을 수 없습니다.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         // 데이터베이스에 저장
         try {
-            dbHelper.insertIngredientWithImage(name, expiration, note, category, imageResource);
+            dbHelper.insertIngredient(name, expiration, note, category, imageResource);
             Toast.makeText(this, "재료가 추가되었습니다.", Toast.LENGTH_SHORT).show();
             finish(); // 액티비티 종료
         } catch (Exception e) {
@@ -95,7 +100,7 @@ public class addition extends AppCompatActivity {
             case "유제품":
                 return R.drawable.ic_you; // 유제품 기본 이미지
             default:
-                return R.drawable.ic_logo; // 기타 기본 이미지
+                return R.drawable.ic_carrot; // 기타 기본 이미지
         }
     }
 }

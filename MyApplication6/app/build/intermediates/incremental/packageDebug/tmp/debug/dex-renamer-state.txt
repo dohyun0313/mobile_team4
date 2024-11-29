@@ -1,4 +1,4 @@
-#Thu Nov 28 12:56:42 KST 2024
+#Thu Nov 28 18:05:46 KST 2024
 base.0=/Users/dohyunpc/Desktop/mobile_project/mobile_ver2/MyApplication6/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/dohyunpc/Desktop/mobile_project/mobile_ver2/MyApplication6/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.2=/Users/dohyunpc/Desktop/mobile_project/mobile_ver2/MyApplication6/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex

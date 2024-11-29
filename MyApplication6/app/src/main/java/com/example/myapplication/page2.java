@@ -7,13 +7,16 @@ import android.widget.GridLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.LinearLayout;
+import android.widget.Toast;
+import android.graphics.Color;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class page2 extends AppCompatActivity {
 
     private DatabaseHelper dbHelper;
+    private GridLayout vegetableGrid, meatGrid, dairyGrid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,18 +43,20 @@ public class page2 extends AppCompatActivity {
         ImageButton addDairy = findViewById(R.id.imageButton3);
         addDairy.setOnClickListener(v -> openAdditionPage("유제품"));
 
-        // 카테고리별 재료 표시
-        GridLayout vegetableGrid = findViewById(R.id.vegItemsGrid);
-        displayCategoryItems("채소", vegetableGrid);
-
-        GridLayout meatGrid = findViewById(R.id.meatItemsGrid);
-        displayCategoryItems("육류", meatGrid);
-
-        GridLayout dairyGrid = findViewById(R.id.dairyItemsGrid);
-        displayCategoryItems("유제품", dairyGrid);
+        // GridLayout 초기화
+        vegetableGrid = findViewById(R.id.vegItemsGrid);
+        meatGrid = findViewById(R.id.meatItemsGrid);
+        dairyGrid = findViewById(R.id.dairyItemsGrid);
 
         // 하단 네비게이션 버튼 설정
         setupNavigationButtons();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // 페이지로 돌아올 때 GridLayout을 갱신
+        refreshCategoryItems();
     }
 
     private void openAdditionPage(String category) {
@@ -60,40 +65,85 @@ public class page2 extends AppCompatActivity {
         startActivity(intent);
     }
 
+    private void refreshCategoryItems() {
+        // 기존 GridLayout 초기화
+        vegetableGrid.removeAllViews();
+        meatGrid.removeAllViews();
+        dairyGrid.removeAllViews();
+
+        // 카테고리별 데이터 다시 로드
+        displayCategoryItems("채소", vegetableGrid);
+        displayCategoryItems("육류", meatGrid);
+        displayCategoryItems("유제품", dairyGrid);
+    }
+
     private void displayCategoryItems(String category, GridLayout gridLayout) {
-        Cursor cursor = dbHelper.getIngredientWithImageByCategory(category);
+        Cursor cursor = dbHelper.getIngredientsByCategory(category);
+
+        gridLayout.setColumnCount(4); // 한 행에 4개 배치
+
+
         while (cursor.moveToNext()) {
             String name = cursor.getString(cursor.getColumnIndexOrThrow(DatabaseHelper.COLUMN_NAME));
-            int imageResId = cursor.getInt(cursor.getColumnIndexOrThrow(DatabaseHelper.COLUMN_IMAGE)); // 리소스 ID 가져오기
+            int imageResId = cursor.getInt(cursor.getColumnIndexOrThrow(DatabaseHelper.COLUMN_IMAGE));
+            int itemId = cursor.getInt(cursor.getColumnIndexOrThrow(DatabaseHelper.COLUMN_ID)); // ID 가져오기
 
-            // 이미지 아이콘 동적 생성
+            // 이미지 생성
             ImageView itemImage = new ImageView(this);
-            itemImage.setImageResource(imageResId); // 리소스 ID로 이미지 설정
+            itemImage.setImageResource(imageResId);
 
-            // 이미지 크기 조정 (100dp x 100dp)
-            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
-                    getResources().getDimensionPixelSize(R.dimen.grid_image_size),
-                    getResources().getDimensionPixelSize(R.dimen.grid_image_size)
-            );
-            layoutParams.setMargins(8, 8, 8, 8); // 여백 설정
-            itemImage.setLayoutParams(layoutParams);
+            // 이미지 크기 및 여백 설정
+            GridLayout.LayoutParams imageParams = new GridLayout.LayoutParams();
+            imageParams.width = 150; // 고정 크기
+            imageParams.height = 150; // 고정 크기
+            imageParams.setMargins(16, 16, 16, 16);
+            itemImage.setLayoutParams(imageParams);
+
+            itemImage.setBackgroundColor(Color.parseColor("#D3D3D3")); // 밝은 회색 배경 예시
+            itemImage.setPadding(10, 10, 10, 10); // 패딩 추가 (이미지가 배경에서 분리되어 보이도록)
 
             // GridLayout에 이미지 추가
             gridLayout.addView(itemImage);
 
-            // 이름 텍스트 동적 생성
+            // 이름 텍스트 생성
             TextView itemName = new TextView(this);
             itemName.setText(name);
+            itemName.setTextSize(14); // 텍스트 크기
+            itemName.setGravity(android.view.Gravity.CENTER);
 
-            // 텍스트 스타일 조정
-            GridLayout.LayoutParams textLayoutParams = new GridLayout.LayoutParams();
-            textLayoutParams.setMargins(8, 8, 8, 8); // 여백 설정
-            itemName.setLayoutParams(textLayoutParams);
+            // 텍스트 레이아웃 설정
+            GridLayout.LayoutParams textParams = new GridLayout.LayoutParams();
+            textParams.setMargins(16, 4, 16, 16);
+            itemName.setLayoutParams(textParams);
 
             // GridLayout에 텍스트 추가
             gridLayout.addView(itemName);
+
+            // **길게 눌러 삭제 이벤트 추가**
+            itemImage.setOnLongClickListener(v -> {
+                showDeleteConfirmationDialog(itemId, gridLayout, itemImage, itemName);
+                return true;
+            });
         }
         cursor.close();
+    }
+
+    private void showDeleteConfirmationDialog(int itemId, GridLayout gridLayout, ImageView itemImage, TextView itemName) {
+        new AlertDialog.Builder(this)
+                .setTitle("삭제 확인")
+                .setMessage("이 항목을 삭제하시겠습니까?")
+                .setPositiveButton("삭제", (dialog, which) -> {
+                    // 데이터베이스에서 삭제
+                    dbHelper.deleteIngredient(itemId);
+
+                    // GridLayout에서 제거
+                    gridLayout.removeView(itemImage);
+                    gridLayout.removeView(itemName);
+
+                    Toast.makeText(this, "삭제되었습니다.", Toast.LENGTH_SHORT).show();
+                })
+                .setNegativeButton("취소", null)
+                .show();
     }
 
     private void setupNavigationButtons() {

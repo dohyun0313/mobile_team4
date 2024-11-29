@@ -5,7 +5,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.widget.ImageView;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
@@ -20,7 +19,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COLUMN_EXPIRATION = "expiration";
     public static final String COLUMN_MEMO = "memo";
     public static final String COLUMN_CATEGORY = "category";
-    public static final String COLUMN_IMAGE = "image"; // 리소스 ID 저장
+    public static final String COLUMN_IMAGE = "image"; // 이미지 리소스 ID 저장
 
     // 생성자
     public DatabaseHelper(Context context) {
@@ -32,62 +31,71 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         // 테이블 생성 SQL
         String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME + " (" +
                 COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                COLUMN_NAME + " TEXT, " +
-                COLUMN_EXPIRATION + " TEXT, " +
+                COLUMN_NAME + " TEXT NOT NULL, " +
+                COLUMN_EXPIRATION + " TEXT NOT NULL, " +
                 COLUMN_MEMO + " TEXT, " +
-                COLUMN_CATEGORY + " TEXT, " +
-                COLUMN_IMAGE + " INTEGER)"; // INTEGER로 변경
+                COLUMN_CATEGORY + " TEXT NOT NULL, " +
+                COLUMN_IMAGE + " INTEGER NOT NULL)"; // INTEGER로 이미지 리소스 ID 저장
         db.execSQL(CREATE_TABLE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // 기존 테이블 삭제 후 재생성
+        // 테이블 초기화
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
     }
 
-    // 데이터 삽입 메서드 (리소스 ID 사용)
-    public void insertIngredientWithImage(String name, String expiration, String memo, String category, int imageResourceId) {
+    // 데이터 삽입 메서드 (이미지 리소스 ID 포함)
+    public void insertIngredient(String name, String expiration, String memo, String category, int imageResId) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(COLUMN_NAME, name);
         values.put(COLUMN_EXPIRATION, expiration);
         values.put(COLUMN_MEMO, memo);
         values.put(COLUMN_CATEGORY, category);
-        values.put(COLUMN_IMAGE, imageResourceId); // 리소스 ID 추가
+        values.put(COLUMN_IMAGE, imageResId);
         db.insert(TABLE_NAME, null, values);
         db.close();
     }
 
-    // 데이터 조회 메서드 (카테고리별 조회)
-    public Cursor getIngredientWithImageByCategory(String category) {
+    // 특정 카테고리별 데이터 조회
+    public Cursor getIngredientsByCategory(String category) {
         SQLiteDatabase db = this.getReadableDatabase();
-        return db.rawQuery(
-                "SELECT " + COLUMN_NAME + ", " + COLUMN_IMAGE +
-                        " FROM " + TABLE_NAME +
-                        " WHERE " + COLUMN_CATEGORY + " = ?",
-                new String[]{category}
-        );
+        return db.rawQuery("SELECT * FROM " + TABLE_NAME + " WHERE " + COLUMN_CATEGORY + " = ?", new String[]{category});
     }
 
-    // 리소스 ID로 ImageView에 이미지 설정
-    public void setImageFromResource(ImageView imageView, int resourceId) {
-        imageView.setImageResource(resourceId);
+    // 모든 데이터 조회
+    public Cursor getAllIngredients() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        return db.rawQuery("SELECT * FROM " + TABLE_NAME, null);
     }
 
-    // 예제 메서드: 특정 카테고리의 아이템 UI 설정
-    public void displayIngredientsByCategory(String category, ImageView imageView) {
-        Cursor cursor = getIngredientWithImageByCategory(category);
-        if (cursor.moveToFirst()) {
-            do {
-                String name = cursor.getString(cursor.getColumnIndex(COLUMN_NAME));
-                int imageResourceId = cursor.getInt(cursor.getColumnIndex(COLUMN_IMAGE));
+    // 데이터 초기화 (모든 데이터 삭제)
+    public void clearDatabase() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("DELETE FROM " + TABLE_NAME);
+        db.close();
+    }
 
-                // 이미지 설정
-                setImageFromResource(imageView, imageResourceId);
-            } while (cursor.moveToNext());
-        }
-        cursor.close();
+    // 데이터 삭제 (특정 재료 ID로 삭제)
+    public void deleteIngredient(int id) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(TABLE_NAME, COLUMN_ID + "=?", new String[]{String.valueOf(id)});
+        db.close();
+    }
+
+
+    // 특정 재료 업데이트
+    public void updateIngredient(int id, String name, String expiration, String memo, String category, int imageResId) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_NAME, name);
+        values.put(COLUMN_EXPIRATION, expiration);
+        values.put(COLUMN_MEMO, memo);
+        values.put(COLUMN_CATEGORY, category);
+        values.put(COLUMN_IMAGE, imageResId);
+        db.update(TABLE_NAME, values, COLUMN_ID + " = ?", new String[]{String.valueOf(id)});
+        db.close();
     }
 }

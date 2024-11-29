@@ -6,156 +6,50 @@
     android:orientation="vertical"
     android:background="@drawable/bg_color">
 
-
-    <!-- 네비게이션 바 -->
+    <!-- 상단 바 -->
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_day_color" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="유통기한"
+            android:textColor="#0023A7"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- 구분선 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#0023A7" />
+
+    <!-- 동적 데이터 추가를 위한 GridLayout -->
+    <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:columnCount="2"
+        android:padding="16dp"
+        android:layout_marginTop="16dp">
+        <!-- 데이터를 Java 코드에서 동적으로 추가 -->
+    </GridLayout>
 
-        <!-- 상단 바 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:padding="16dp"
-            android:paddingBottom="8dp">
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_day_color" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="  유통기한"
-                android:textColor="#0023A7"
-                android:textSize="25sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:background="#0023A7" />
-
-
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:columnCount="4"
-            android:padding="16dp">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/item1"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_margin="4dp"
-                android:layout_marginLeft="13dp"
-                android:clickable="true"
-                android:focusable="true"
-                card_view:cardCornerRadius="15dp"
-                card_view:cardElevation="4dp">
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/dayli"> <!-- 전체 배경 -->
-
-                    <ImageView
-                        android:layout_width="130dp"
-                        android:layout_height="74dp"
-                        android:layout_gravity="center"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
-                        android:layout_marginTop="-30dp"
-                        android:background="@drawable/daylimtitem"
-                        android:src="@drawable/ic_carrot" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="25dp"
-                        android:text="당근"
-                        android:textStyle="bold"
-                        android:textColor="#FFFFFF"
-                        android:textSize="17dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="50dp"
-                        android:text="2024.11.30 까지"
-                        android:textColor="#FFFFFF"
-                        android:textSize="15dp" />
-
-                </FrameLayout>
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/item2"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_margin="4dp"
-                android:layout_marginLeft="21dp"
-                android:clickable="true"
-                android:focusable="true"
-                card_view:cardCornerRadius="15dp"
-                card_view:cardElevation="4dp">
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/dayli"> <!-- 전체 배경 -->
-
-                    <ImageView
-                        android:layout_width="130dp"
-                        android:layout_height="74dp"
-                        android:layout_gravity="center"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
-                        android:layout_marginTop="-30dp"
-                        android:background="@drawable/daylimtitem"
-                        android:src="@drawable/ic_carrot" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="25dp"
-                        android:text="당근"
-                        android:textStyle="bold"
-                        android:textColor="#FFFFFF"
-                        android:textSize="17dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="50dp"
-                        android:text="2024.11.30 까지"
-                        android:textColor="#FFFFFF"
-                        android:textSize="15dp" />
-
-                </FrameLayout>
-            </androidx.cardview.widget.CardView>
-
-
-        </GridLayout>
-
-
-    </LinearLayout>
-
+    <!-- 하단 네비게이션 바 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -163,135 +57,110 @@
         android:gravity="center"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:background="@drawable/gredient_navbar"> <!-- 배경색 설정 -->
+        android:background="@drawable/gredient_navbar">
 
+        <!-- 홈 버튼 -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:gravity="center"
-            android:padding="0dp">
+            android:gravity="center">
 
-            <!-- 이미지 버튼 -->
             <ImageButton
                 android:id="@+id/btnNav3"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/ic_refrigerator"
                 android:background="@android:color/transparent"
-                android:scaleType="fitCenter" />
+                android:scaleType="fitCenter"/>
 
-            <!-- 텍스트뷰 -->
             <TextView
-                android:id="@+id/textNav3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
                 android:text="홈"
                 android:textSize="12sp"
                 android:textColor="#FFFFFF"
-                android:gravity="center"
-                android:visibility="visible" />
+                android:gravity="center" />
         </LinearLayout>
 
+        <!-- 유통기한 버튼 -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:gravity="center"
-            android:padding="0dp">
+            android:gravity="center">
 
-            <!-- 이미지 버튼 -->
             <ImageButton
                 android:id="@+id/btnNav1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/ic_day_nocolor"
                 android:background="@android:color/transparent"
-                android:scaleType="fitCenter" />
+                android:scaleType="fitCenter"/>
 
-            <!-- 텍스트뷰 -->
             <TextView
-                android:id="@+id/textNav1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
                 android:text="유통기한"
                 android:textSize="12sp"
                 android:textColor="#FFFFFF"
-                android:gravity="center"
-                android:visibility="visible" />
+                android:gravity="center" />
         </LinearLayout>
 
-
+        <!-- 레시피 추천 버튼 -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:gravity="center"
-            android:padding="0dp">
+            android:gravity="center">
 
-            <!-- 이미지 버튼 -->
             <ImageButton
                 android:id="@+id/btnNav2"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/ic_book_nocolor"
                 android:background="@android:color/transparent"
-                android:scaleType="fitCenter" />
+                android:scaleType="fitCenter"/>
 
-            <!-- 텍스트뷰 -->
             <TextView
-                android:id="@+id/textNav2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
                 android:text="레시피 추천"
                 android:textSize="12sp"
                 android:textColor="#FFFFFF"
-                android:gravity="center"
-                android:visibility="visible" />
+                android:gravity="center" />
         </LinearLayout>
 
-
-
+        <!-- 내 냉장고 버튼 -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:gravity="center"
-            android:padding="0dp">
+            android:gravity="center">
 
-            <!-- 이미지 버튼 -->
             <ImageButton
                 android:id="@+id/btnNav4"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/ic_re_nocolor"
                 android:background="@android:color/transparent"
-                android:scaleType="fitCenter" />
+                android:scaleType="fitCenter"/>
 
-            <!-- 텍스트뷰 -->
             <TextView
-                android:id="@+id/textNav4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
                 android:text="내 냉장고"
                 android:textSize="12sp"
                 android:textColor="#FFFFFF"
-                android:gravity="center"
-                android:visibility="visible" />
+                android:gravity="center" />
         </LinearLayout>
-
-
-
     </LinearLayout>
-
-
-
 </LinearLayout>
