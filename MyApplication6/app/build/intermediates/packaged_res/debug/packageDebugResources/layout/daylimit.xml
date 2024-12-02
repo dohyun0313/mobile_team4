@@ -37,17 +37,23 @@
         android:layout_height="4dp"
         android:background="#0023A7" />
 
-    <!-- 동적 데이터 추가를 위한 GridLayout -->
-    <GridLayout
-        android:id="@+id/gridLayout"
+    <!-- ScrollView로 감싼 GridLayout -->
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:columnCount="2"
-        android:padding="16dp"
-        android:layout_marginTop="16dp">
-        <!-- 데이터를 Java 코드에서 동적으로 추가 -->
-    </GridLayout>
+        android:fillViewport="true">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+            <!-- 데이터를 Java 코드에서 동적으로 추가 -->
+        </GridLayout>
+    </ScrollView>
 
     <!-- 하단 네비게이션 바 -->
     <LinearLayout
@@ -131,7 +137,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="레시피 추천"
+                android:text="요리 검색"
                 android:textSize="12sp"
                 android:textColor="#FFFFFF"
                 android:gravity="center" />

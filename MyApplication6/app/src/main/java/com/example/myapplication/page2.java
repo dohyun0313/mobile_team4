@@ -2,13 +2,15 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.widget.GridLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.graphics.Color;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -80,55 +82,66 @@ public class page2 extends AppCompatActivity {
     private void displayCategoryItems(String category, GridLayout gridLayout) {
         Cursor cursor = dbHelper.getIngredientsByCategory(category);
 
-        gridLayout.setColumnCount(4); // 한 행에 4개 배치
-
+        gridLayout.setColumnCount(5); // 한 행에 5개 배치
 
         while (cursor.moveToNext()) {
             String name = cursor.getString(cursor.getColumnIndexOrThrow(DatabaseHelper.COLUMN_NAME));
             int imageResId = cursor.getInt(cursor.getColumnIndexOrThrow(DatabaseHelper.COLUMN_IMAGE));
             int itemId = cursor.getInt(cursor.getColumnIndexOrThrow(DatabaseHelper.COLUMN_ID)); // ID 가져오기
 
+            // 그룹화된 레이아웃 생성 (이미지 + 텍스트)
+            LinearLayout groupLayout = new LinearLayout(this);
+            groupLayout.setOrientation(LinearLayout.VERTICAL); // 세로 방향
+            groupLayout.setGravity(android.view.Gravity.CENTER); // 중앙 정렬
+
+            // 그룹 레이아웃 여백 설정
+            GridLayout.LayoutParams groupParams = new GridLayout.LayoutParams();
+            groupParams.setMargins(16, 16, 16, 16);
+            groupLayout.setLayoutParams(groupParams);
+
             // 이미지 생성
             ImageView itemImage = new ImageView(this);
             itemImage.setImageResource(imageResId);
 
-            // 이미지 크기 및 여백 설정
-            GridLayout.LayoutParams imageParams = new GridLayout.LayoutParams();
-            imageParams.width = 150; // 고정 크기
-            imageParams.height = 150; // 고정 크기
-            imageParams.setMargins(16, 16, 16, 16);
+            // 둥근 배경과 테두리 설정
+            GradientDrawable drawable = new GradientDrawable();
+            drawable.setShape(GradientDrawable.RECTANGLE);
+            drawable.setCornerRadius(30); // 둥근 모서리 반지름
+            drawable.setColor(Color.WHITE); // 내부 배경색
+            drawable.setStroke(4, Color.parseColor("#8AB4F8")); // 테두리 색상 및 두께
+            itemImage.setBackground(drawable);
+            itemImage.setClipToOutline(true); // 둥근 배경에 맞게 클리핑
+
+            // 이미지 크기 설정
+            LinearLayout.LayoutParams imageParams = new LinearLayout.LayoutParams(150, 150); // 크기 조정
+            imageParams.setMargins(0, 0, 0, 8); // 이미지와 텍스트 간 간격
             itemImage.setLayoutParams(imageParams);
 
-            itemImage.setBackgroundColor(Color.parseColor("#D3D3D3")); // 밝은 회색 배경 예시
-            itemImage.setPadding(10, 10, 10, 10); // 패딩 추가 (이미지가 배경에서 분리되어 보이도록)
-
-            // GridLayout에 이미지 추가
-            gridLayout.addView(itemImage);
+            // 그룹 레이아웃에 이미지 추가
+            groupLayout.addView(itemImage);
 
             // 이름 텍스트 생성
             TextView itemName = new TextView(this);
             itemName.setText(name);
             itemName.setTextSize(14); // 텍스트 크기
-            itemName.setGravity(android.view.Gravity.CENTER);
+            itemName.setGravity(android.view.Gravity.CENTER); // 텍스트 중앙 정렬
 
-            // 텍스트 레이아웃 설정
-            GridLayout.LayoutParams textParams = new GridLayout.LayoutParams();
-            textParams.setMargins(16, 4, 16, 16);
-            itemName.setLayoutParams(textParams);
+            // 텍스트 추가
+            groupLayout.addView(itemName);
 
-            // GridLayout에 텍스트 추가
-            gridLayout.addView(itemName);
+            // GridLayout에 그룹 추가
+            gridLayout.addView(groupLayout);
 
             // **길게 눌러 삭제 이벤트 추가**
-            itemImage.setOnLongClickListener(v -> {
-                showDeleteConfirmationDialog(itemId, gridLayout, itemImage, itemName);
+            groupLayout.setOnLongClickListener(v -> {
+                showDeleteConfirmationDialog(itemId, gridLayout, groupLayout);
                 return true;
             });
         }
         cursor.close();
     }
 
-    private void showDeleteConfirmationDialog(int itemId, GridLayout gridLayout, ImageView itemImage, TextView itemName) {
+    private void showDeleteConfirmationDialog(int itemId, GridLayout gridLayout, LinearLayout groupLayout) {
         new AlertDialog.Builder(this)
                 .setTitle("삭제 확인")
                 .setMessage("이 항목을 삭제하시겠습니까?")
@@ -137,8 +150,7 @@ public class page2 extends AppCompatActivity {
                     dbHelper.deleteIngredient(itemId);
 
                     // GridLayout에서 제거
-                    gridLayout.removeView(itemImage);
-                    gridLayout.removeView(itemName);
+                    gridLayout.removeView(groupLayout);
 
                     Toast.makeText(this, "삭제되었습니다.", Toast.LENGTH_SHORT).show();
                 })

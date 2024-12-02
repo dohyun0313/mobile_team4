@@ -3026,6 +3026,7 @@ drawable design_snackbar_background
 drawable gredient_navbar
 drawable ic_add
 drawable ic_arrow_back_black_24
+drawable ic_as
 drawable ic_book
 drawable ic_book_color
 drawable ic_book_nocolor
@@ -3041,6 +3042,9 @@ drawable ic_clock_black_24dp
 drawable ic_day
 drawable ic_day_color
 drawable ic_day_nocolor
+drawable ic_figma
+drawable ic_git
+drawable ic_github
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -3048,6 +3052,7 @@ drawable ic_logo
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
+drawable ic_mail
 drawable ic_meat
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
@@ -3066,6 +3071,7 @@ drawable ic_search_resized
 drawable ic_setting
 drawable ic_setting_color
 drawable ic_setting_nocolor
+drawable ic_sq
 drawable ic_vegetable
 drawable ic_vigan
 drawable ic_you
@@ -3385,9 +3391,13 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageBottomLeft
+id imageBottomRight
 id imageButton
 id imageButton2
 id imageButton3
+id imageTopLeft
+id imageTopRight
 id immediateStop
 id included
 id indeterminate
@@ -3437,7 +3447,6 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id meatItemsGrid
-id memo
 id menu1
 id menu2
 id menu3
@@ -3534,11 +3543,8 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
-id recommend1
-id recommend2
-id recommend3
-id recommend4
 id rectangles
+id recyclerView
 id report_drawn
 id reverseSawtooth
 id right
@@ -3661,6 +3667,9 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvDescription
+id tvIngredients
+id tvTitle
 id unchecked
 id uniform
 id unlabeled
@@ -3821,12 +3830,13 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout information
+layout item_recipe
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
 layout m3_auto_complete_simple_item
 layout m3_side_sheet_dialog
-layout mainpage
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -3880,6 +3890,7 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout page2
+layout recyclerviewresults
 layout search
 layout searchreasult
 layout select_dialog_item_material

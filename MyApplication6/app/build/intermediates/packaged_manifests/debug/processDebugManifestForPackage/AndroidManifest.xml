@@ -40,7 +40,7 @@
         <activity android:name="com.example.myapplication.addition" />
         <activity android:name="com.example.myapplication.daylimit" />
         <activity android:name="com.example.myapplication.search" />
-        <activity android:name="com.example.myapplication.searchreasult" />
+        <activity android:name="com.example.myapplication.information" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

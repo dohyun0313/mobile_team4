@@ -1,238 +1,294 @@
 [
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_setting_color.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_setting_color.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/layout_item_recipe.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/layout/item_recipe.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/layout_addition.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/layout/addition.xml"
+        "merged": "com.example.myapplication.app-debug-31:/layout_searchreasult.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/layout/searchreasult.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/layout_searchreasult.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/layout/searchreasult.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/layout_searchreasult.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/layout/searchreasult.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_plus.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_plus.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_logo.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_logo.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_carrot.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_carrot.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/xml/data_extraction_rules.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_git.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_git.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_spinner_background.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/spinner_background.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_day_color.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_day_color.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/layout_information.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/layout/information.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_setting.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_setting.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_vegetable.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_vegetable.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_re.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_re.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_rounded_button.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/rounded_button.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_rounded_blue_button.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/rounded_blue_button.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_youtube.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_youtube.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_plus.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_plus.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_daylimtitem.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/daylimtitem.xml"
+        "merged": "com.example.myapplication.app-debug-31:/layout_search.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/layout/search.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_launcher_background.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_book_color.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_book_color.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_rounded_blue_button.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/rounded_blue_button.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/layout_daylimit.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/layout/daylimit.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_re_color.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_re_color.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/layout_mainpage.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/layout/mainpage.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_plus2.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_plus2.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_book_color.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_book_color.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_meat.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_meat.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_plus2.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_plus2.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_dayli.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/dayli.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_daylimtitem.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/daylimtitem.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/layout_mainpage.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/layout/mainpage.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_gredient_navbar.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/gredient_navbar.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_re.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_re.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_bg_color.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/bg_color.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_add.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_add.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/layout_page2.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/layout/page2.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_re_color.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_re_color.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_sq.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_sq.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.example.myapplication.app-debug-31:/layout_activity_main.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_vegetable.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_vegetable.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_as.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_as.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_rounded_button_addition.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/rounded_button_addition.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_figma.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_figma.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_rounded_button.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/rounded_button.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_setting_nocolor.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_setting_nocolor.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/layout_activity_main.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/layout/activity_main.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_day.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_day.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_add.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_add.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_search.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_search.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_setting.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_setting.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_vigan.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_vigan.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_day_nocolor.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_day_nocolor.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_you.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_you.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_gredient_navbar.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/gredient_navbar.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/layout_search.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/layout/search.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_pa.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_pa.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_spinner_background.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/spinner_background.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_day_color.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_day_color.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_vigan.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_vigan.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_dayli.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/dayli.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_border.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/border.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_meat.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_meat.png"
+        "merged": "com.example.myapplication.app-debug-31:/layout_information.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/layout/information.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_day_nocolor.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_day_nocolor.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/layout_recyclerviewresults.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/layout/recyclerviewresults.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_setting_nocolor.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_setting_nocolor.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_you.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_you.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_re_nocolor.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_re_nocolor.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/layout_page2.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/layout/page2.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_search_resized.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_search_resized.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_carrot.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_carrot.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_logo.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_logo.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_rounded_button_addition.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/rounded_button_addition.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/layout_daylimit.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/layout/daylimit.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_pa.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_pa.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_border.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/border.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_bg_color.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/bg_color.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/xml_backup_rules.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/xml/backup_rules.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_refrigerator.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_refrigerator.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_book.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_book.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_mail.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_mail.png"
+    },
+    {
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/layout_search.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/layout/search.xml"
+    },
+    {
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/layout_activity_main.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-debug-31:/layout_daylimit.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/layout/daylimit.xml"
+    },
+    {
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_book_nocolor.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_book_nocolor.png"
+    },
+    {
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_youtube.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_youtube.png"
+    },
+    {
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_book.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_book.png"
+    },
+    {
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_refrigerator.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_refrigerator.png"
+    },
+    {
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_github.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_github.png"
+    },
+    {
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_search_resized.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_search_resized.xml"
+    },
+    {
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_setting_color.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_setting_color.png"
     },
     {
         "merged": "com.example.myapplication.app-debug-31:/layout_page2.xml.flat",
         "source": "com.example.myapplication.app-main-33:/layout/page2.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_day.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_day.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_re_nocolor.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_re_nocolor.png"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_book_nocolor.png.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_book_nocolor.png"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/xml_backup_rules.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/xml/backup_rules.xml"
     },
     {
-        "merged": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/dohyunpc/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/drawable_ic_search.png.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/drawable/ic_search.png"
+    },
+    {
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/layout_addition.xml.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/layout/addition.xml"
+    },
+    {
+        "merged": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-debug-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/yundowon/.gradle/daemon/8.7/com.example.myapplication.app-main-33:/mipmap-hdpi/ic_launcher_round.webp"
     }
 ]

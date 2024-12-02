@@ -1,6 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<!-- Root layout for your activity or fragment -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item1"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_margin="4dp"
+    android:layout_marginLeft="13dp"
+    android:clickable="true"
+    android:focusable="true"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardElevation="4dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dayli"> <!-- Background image for the whole card -->
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="74dp"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="-30dp"
+            android:background="@drawable/daylimtitem"
+            android:src="@drawable/ic_carrot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="당근 무침"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

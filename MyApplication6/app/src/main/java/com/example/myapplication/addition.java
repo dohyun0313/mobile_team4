@@ -21,6 +21,9 @@ public class addition extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
         setContentView(R.layout.addition);
 
         // DatabaseHelper 초기화
@@ -29,7 +32,6 @@ public class addition extends AppCompatActivity {
         // UI 요소 초기화
         foodName = findViewById(R.id.foodName);
         day = findViewById(R.id.day);
-        memo = findViewById(R.id.memo);
         btnCancel = findViewById(R.id.btnCancel);
         btnAdd = findViewById(R.id.btnAdd);
 
@@ -53,7 +55,6 @@ public class addition extends AppCompatActivity {
         // 입력 값 가져오기
         String name = foodName.getText().toString().trim();
         String expiration = day.getText().toString().trim();
-        String note = memo.getText().toString().trim();
 
         // 필수 입력값 확인
         if (TextUtils.isEmpty(name)) {
@@ -76,7 +77,7 @@ public class addition extends AppCompatActivity {
 
         // 데이터베이스에 저장
         try {
-            dbHelper.insertIngredient(name, expiration, note, category, imageResource);
+            dbHelper.insertIngredient(name, expiration, category, imageResource);
             Toast.makeText(this, "재료가 추가되었습니다.", Toast.LENGTH_SHORT).show();
             finish(); // 액티비티 종료
         } catch (Exception e) {
@@ -94,13 +95,13 @@ public class addition extends AppCompatActivity {
     private int getDefaultImageResourceForCategory(String category) {
         switch (category) {
             case "채소":
-                return R.drawable.ic_carrot; // 채소 기본 이미지
+                return R.drawable.ic_vigan; // 채소 기본 이미지
             case "육류":
                 return R.drawable.ic_meat; // 육류 기본 이미지
             case "유제품":
                 return R.drawable.ic_you; // 유제품 기본 이미지
             default:
-                return R.drawable.ic_carrot; // 기타 기본 이미지
+                return R.drawable.ic_vigan; // 기타 기본 이미지
         }
     }
 }

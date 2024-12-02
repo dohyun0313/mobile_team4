@@ -102,11 +102,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginTop="40dp"
-                    android:textSize="18dp"
+                    android:text="요리 검색"
                     android:textColor="#FFFF"
-                    android:text="레시피"
-                    android:layout_gravity="center"/>
+                    android:textSize="18dp" />
             </FrameLayout>
         </androidx.cardview.widget.CardView>
 

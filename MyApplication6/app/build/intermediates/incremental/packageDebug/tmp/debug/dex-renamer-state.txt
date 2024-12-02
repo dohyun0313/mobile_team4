@@ -1,7 +1,7 @@
-#Thu Nov 28 18:05:46 KST 2024
-base.0=/Users/dohyunpc/Desktop/mobile_project/mobile_ver2/MyApplication6/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/dohyunpc/Desktop/mobile_project/mobile_ver2/MyApplication6/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/dohyunpc/Desktop/mobile_project/mobile_ver2/MyApplication6/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex
+#Mon Dec 02 19:13:12 KST 2024
+base.0=/Users/yundowon/Desktop/FB_moblie/mobile_team4/MyApplication6/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/Users/yundowon/Desktop/FB_moblie/mobile_team4/MyApplication6/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/Users/yundowon/Desktop/FB_moblie/mobile_team4/MyApplication6/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=5/classes.dex

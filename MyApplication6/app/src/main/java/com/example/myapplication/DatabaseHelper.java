@@ -17,7 +17,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COLUMN_ID = "_id";
     public static final String COLUMN_NAME = "name";
     public static final String COLUMN_EXPIRATION = "expiration";
-    public static final String COLUMN_MEMO = "memo";
     public static final String COLUMN_CATEGORY = "category";
     public static final String COLUMN_IMAGE = "image"; // 이미지 리소스 ID 저장
 
@@ -33,7 +32,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COLUMN_NAME + " TEXT NOT NULL, " +
                 COLUMN_EXPIRATION + " TEXT NOT NULL, " +
-                COLUMN_MEMO + " TEXT, " +
                 COLUMN_CATEGORY + " TEXT NOT NULL, " +
                 COLUMN_IMAGE + " INTEGER NOT NULL)"; // INTEGER로 이미지 리소스 ID 저장
         db.execSQL(CREATE_TABLE);
@@ -47,12 +45,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     // 데이터 삽입 메서드 (이미지 리소스 ID 포함)
-    public void insertIngredient(String name, String expiration, String memo, String category, int imageResId) {
+    public void insertIngredient(String name, String expiration, String category, int imageResId) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(COLUMN_NAME, name);
         values.put(COLUMN_EXPIRATION, expiration);
-        values.put(COLUMN_MEMO, memo);
         values.put(COLUMN_CATEGORY, category);
         values.put(COLUMN_IMAGE, imageResId);
         db.insert(TABLE_NAME, null, values);
@@ -92,7 +89,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(COLUMN_NAME, name);
         values.put(COLUMN_EXPIRATION, expiration);
-        values.put(COLUMN_MEMO, memo);
         values.put(COLUMN_CATEGORY, category);
         values.put(COLUMN_IMAGE, imageResId);
         db.update(TABLE_NAME, values, COLUMN_ID + " = ?", new String[]{String.valueOf(id)});

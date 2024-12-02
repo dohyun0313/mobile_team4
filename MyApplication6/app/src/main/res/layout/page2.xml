@@ -246,7 +246,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
-            android:text="레시피 추천"
+            android:text="요리 검색"
             android:textSize="12sp"
             android:textColor="#FFFFFF"
             android:gravity="center"

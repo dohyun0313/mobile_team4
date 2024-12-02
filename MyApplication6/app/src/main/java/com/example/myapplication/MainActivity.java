@@ -67,9 +67,12 @@ public class MainActivity extends AppCompatActivity {
         menu4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 설정 버튼 클릭 리스너 추가 (필요에 따라 처리)
-                Log.d("MainActivity", "menu4 clicked: No action defined");
+                Log.d("MainActivity", "menu4 clicked: Navigating to information");
+                Intent intent = new Intent(MainActivity.this, information.class);
+                startActivity(intent);
             }
         });
+
+
     }
 }
